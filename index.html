@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        .todo-item {
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 7px;
+            height: 30px;
+        }
+
+        .btn {
+            background-color: crimson;
+            color: white;
+            border: none;
+            border-radius: 10%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tasks</h1>
+    <div id="display" class="display"></div>
+    <input type="text" id="task-inp">
+    <button onclick="taskinput()"> add</button>
+
+</body>
+
+</html>
