@@ -33,6 +33,23 @@
     <input type="text" id="task-inp">
     <button onclick="taskinput()"> add</button>
 
+
+
+
+    <script>
+        let todo = [];
+        let display = document.getElementById("display");
+
+        function loadFromLocalStorage() {
+            const allTasks = JSON.parse(localStorage.getItem('localtodo'))
+            if (allTasks)
+                todo.push(...allTasks)
+        }
+        loadFromLocalStorage()
+
+     
+
+    </script>
 </body>
 
 </html>
